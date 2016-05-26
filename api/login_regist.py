@@ -4,8 +4,6 @@ from django.views.decorators.csrf import csrf_exempt
 
 @csrf_exempt # skip the csrf confirmation in django
 def register(request):
-    if request.method == 'GET':
-
     if request.method == 'POST':
         data = request.body
         username = data.get('username')
@@ -30,8 +28,6 @@ def register(request):
 
 @csrf_exempt
 def login(request):
-    if method == 'GET':
-
     if method == 'POST':
         data = request.body
         username = data.get('username')

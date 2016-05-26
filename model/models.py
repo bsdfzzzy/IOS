@@ -27,22 +27,22 @@ class MedicineReminder(models.Model):
     owner = models.ForeignKey(User)
     medicineReminder = models.CharField(max_length=1000)
 
-class SportsRemainder(models.Model):
+class SportsReminder(models.Model):
     owner = models.ForeignKey(User)
     sportsRemainder = models.CharField(max_length=1000)
 
-class measurementReminder(models.Model):
+class MeasurementReminder(models.Model):
     owner = models.ForeignKey(User)
     measurementReminder = models.CharField(max_length=1000)
 
-class diabeteRecords(models.Model):
+class DiabeteRecords(models.Model):
     owner = models.ForeignKey(User)
     diabeteRecords = models.CharField(max_length=1000)
 
-class bmiRecords(models.Model):
+class BmiRecords(models.Model):
     owner = models.ForeignKey(User)
     bmiRecords = models.CharField(max_length=1000)
 
-class dietRecords(models.Model):
+class DietRecords(models.Model):
     owner = models.ForeignKey(User)
     dietRecords = models.CharField(max_length=1000)
