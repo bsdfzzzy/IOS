@@ -24,6 +24,8 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^login', login),
     url(r'^register', register),
+    url(r'^profile_get', profile_get),
+    url(r'^profile_update', profile_update),
     url(r'^diabeteRecords_get', diabeteRecords_get),
     url(r'^diabeteRecords_add', diabeteRecords_add),
     url(r'^diabeteRecords_update', diabeteRecords_update),
