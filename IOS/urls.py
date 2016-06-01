@@ -19,6 +19,7 @@ from api.login_regist import *
 from api.records import *
 from api.reminders import *
 from api.results import *
+from api.profile import *
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
