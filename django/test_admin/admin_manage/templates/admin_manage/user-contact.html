@@ -1,0 +1,49 @@
+{% extends "admin_manage/layout.html" %}
+{% block nav %}
+  <div class="templatemo-top-nav-container">
+          <div class="row">
+            <nav class="templatemo-top-nav col-lg-12 col-md-12">
+              <ul class="text-uppercase">
+                <li><a href="/admin_manage/users" class="user_basic">用户基本信息</a></li>
+                <li><a href="/admin_manage/users/daily" class="user_daily">用户日程信息</a></li>
+                <li><a href="/admin_manage/users/contact_list" class="user_contact_list">用户联系人列表</a></li>
+                <li><a href="/admin_manage/users/activity" class="user_activity">用户活动信息</a></li>
+                <li><a href="/admin_manage/users/contact" class="user_contact active">用户通信信息</a></li>
+                <li><a href="/admin_manage/users/notice" class="user_notice">发送系统通知</a></li>
+              </ul>  
+            </nav> 
+          </div>
+  </div>
+  
+{% endblock %}
+{% block content %}
+<div class="templatemo-flex-row flex-content-row">
+            <div class="col-1">
+              <div class="panel panel-default templatemo-content-widget white-bg no-padding templatemo-overflow-hidden">
+                <div class="panel-heading templatemo-position-relative"><h2 class="text-uppercase">选择查看用户</h2></div>
+                <div class="table-responsive">
+                  <table class="table table-striped table-bordered">
+                    <thead>
+                      <tr>
+                        <td>No.</td>
+                        <td>用户名</td>
+                        <td>邮箱</td>
+                        <td>手机</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    {% for user in users %}
+                      <tr>
+                        <td></td>
+                        <td>{{user.name}}</td>
+                        <td>{{user.email}}</td>
+                        <td>{{user.phone}}</td>
+                      </tr>
+                    {% endfor %} 
+                    </tbody>
+                  </table>    
+                </div>                          
+              </div>
+            </div>           
+          </div>
+  {% endblock %}

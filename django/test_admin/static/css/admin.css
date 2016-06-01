@@ -1,0 +1,19 @@
+div.alert{
+    margin: 0 auto;
+    left: 0;
+    position: fixed;
+    width: 500px;
+    top: 0;
+    z-index: 100000;
+    right: 0;
+    display: none;
+    box-shadow: 0 0 30px #999;
+}
+div.alert span.message{
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 5px;
+    font-weight: bold;
+    line-height: 1.875;
+    font-size: 1em;
+}

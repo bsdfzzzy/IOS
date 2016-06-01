@@ -1,0 +1,47 @@
+{% extends "admin_manage/layout.html" %}
+{% block script-front %}
+  <script src="/static/js/awesomechart.js"></script>
+{% endblock %}
+{% block content %}
+<canvas id="app-status" class="templatemo-flex-row flex-content-row" style="width:80%;height:300px;margin:0 auto;"> 
+  Your web-browser does not support the HTML 5 canvas element.
+</canvas>
+<canvas id="user-status" class="templatemo-flex-row flex-content-row" style="width:80%;height:300px;margin:0 auto;"> 
+  Your web-browser does not support the HTML 5 canvas element.
+</canvas>
+<canvas id="event-status" class="templatemo-flex-row flex-content-row" style="width:80%;height:300px;margin:0 auto;"> 
+  Your web-browser does not support the HTML 5 canvas element.
+</canvas>
+{% endblock %}
+{% block script%}
+<script type="text/javascript">
+   function drawMyChart(){
+      if(!$('#app-status').getContext){
+          var mychart = new AwesomeChart('app-status');
+          mychart.title = "APP数据";
+          mychart.data = [1532, 3251, 3460, 1180, 6543,1111,2222];
+          mychart.labels = ["Desktops", "Laptops", "Netbooks", "Tablets", "Smartphones"];
+          mychart.chartType = 'pareto';
+          mychart.draw();
+      }
+      if(!$('#user-status').getContext){
+          var mychart = new AwesomeChart('user-status');
+          mychart.title = "用户数据";
+          mychart.data = [1532, 3251, 3460, 1180, 6543];
+          mychart.labels = ["Desktops", "Laptops", "Netbooks", "Tablets", "Smartphones"];
+          mychart.chartType = 'pareto';
+          mychart.draw();
+      }
+      if(!$('#event-status').getContext){
+          var mychart = new AwesomeChart('event-status');
+          mychart.title = "日程数据";
+          mychart.data = [1532, 3251, 3460, 1180, 6543];
+          mychart.labels = ["Desktops", "Laptops", "Netbooks", "Tablets", "Smartphones"];
+          mychart.chartType = 'pareto';
+          mychart.draw();
+      }
+    }
+      
+    window.onload = drawMyChart;
+</script>
+{% endblock %}

@@ -1,0 +1,72 @@
+[
+  {
+    "model": "model.source",
+    "pk": 1,
+    "fields": {
+      "name": "自定义"
+    }
+  },
+  {
+    "model": "model.source",
+    "pk": 2,
+    "fields": {
+      "name": "本地"
+    }
+  },
+  {
+    "model": "model.source",
+    "pk": 3,
+    "fields": {
+      "name": "豆瓣"
+    }
+  },
+  {
+    "model": "model.source",
+    "pk": 4,
+    "fields": {
+      "name": "Outlook"
+    }
+  },
+  {
+    "model": "model.source",
+    "pk": 5,
+    "fields": {
+      "name": "LinkedIn"
+    }
+  },
+  {
+    "model": "model.source",
+    "pk": 6,
+    "fields": {
+      "name": "微博"
+    }
+  },
+  {
+    "model": "model.source",
+    "pk": 7,
+    "fields": {
+      "name": "Google Calendar"
+    }
+  },
+  {
+    "model": "model.source",
+    "pk": 8,
+    "fields": {
+      "name": "Facebook"
+    }
+  },
+  {
+    "model": "model.source",
+    "pk": 9,
+    "fields": {
+      "name": "Evernote"
+    }
+  },
+  {
+    "model": "model.source",
+    "pk": 10,
+    "fields": {
+      "name": "Github"
+    }
+  }
+]

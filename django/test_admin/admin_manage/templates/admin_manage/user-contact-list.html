@@ -1,0 +1,51 @@
+{% extends "admin_manage/layout.html" %}
+{% block nav %}
+  <div class="templatemo-top-nav-container">
+          <div class="row">
+            <nav class="templatemo-top-nav col-lg-12 col-md-12">
+              <ul class="text-uppercase">
+                <li><a href="/admin_manage/users/{{user.id}}" class="user_basic">账户信息</a></li>
+                <li><a href="/admin_manage/users/contact_list/{{user.id}}" class="user_contact_list active">联系人信息</a></li>
+                <li><a href="/admin_manage/users/daily/{{user.id}}" class="user_daily">日程信息</a></li>
+                <li><a href="/admin_manage/users/contact/{{user.id}}" class="user_contact">通讯记录</a></li>
+              </ul>  
+            </nav> 
+          </div>
+  </div>
+  
+{% endblock %}
+{% block content %}
+<div class="templatemo-flex-row flex-content-row">
+            <div class="col-1">
+              <div class="panel panel-default templatemo-content-widget white-bg no-padding templatemo-overflow-hidden">
+                <div class="panel-heading templatemo-position-relative"><h2 class="text-uppercase">{{user0.name}}的联系人列表</h2></div>
+                <div class="table-responsive">
+                  <table class="table table-striped table-bordered">
+                    <thead>
+                      <tr>
+                        <td>联系人编号</td>
+                        <td>用户名</td>
+                        <td>邮箱</td>
+                        <td>手机</td>
+                        <td>是否用户</td>
+                        <td>联系人来源</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    {% for user in users %}
+                      <tr>
+                        <td></td>
+                        <td><a href="/admin_manage/users/{{user.id}}">{{user.name}}</a></td>
+                        <td>{{user.email}}</td>
+                        <td>{{user.phone}}</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    {% endfor %} 
+                    </tbody>
+                  </table>    
+                </div>                          
+              </div>
+            </div>           
+          </div>
+  {% endblock %}

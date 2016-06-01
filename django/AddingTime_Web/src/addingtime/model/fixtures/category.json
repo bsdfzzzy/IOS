@@ -1,0 +1,72 @@
+[
+  {
+    "model": "model.category",
+    "pk": 1,
+    "fields": {
+      "name": "工作"
+    }
+  },
+  {
+    "model": "model.category",
+    "pk": 2,
+    "fields": {
+      "name": "家庭"
+    }
+  },
+  {
+    "model": "model.category",
+    "pk": 3,
+    "fields": {
+      "name": "学习"
+    }
+  },
+  {
+    "model": "model.category",
+    "pk": 4,
+    "fields": {
+      "name": "运动"
+    }
+  },
+  {
+    "model": "model.category",
+    "pk": 5,
+    "fields": {
+      "name": "旅行"
+    }
+  },
+  {
+    "model": "model.category",
+    "pk": 6,
+    "fields": {
+      "name": "娱乐"
+    }
+  },
+  {
+    "model": "model.category",
+    "pk": 7,
+    "fields": {
+      "name": "待办"
+    }
+  },
+  {
+    "model": "model.category",
+    "pk": 8,
+    "fields": {
+      "name": "假日"
+    }
+  },
+  {
+    "model": "model.category",
+    "pk": 9,
+    "fields": {
+      "name": "纪念日"
+    }
+  },
+  {
+    "model": "model.category",
+    "pk": 10,
+    "fields": {
+      "name": "其他"
+    }
+  }
+]

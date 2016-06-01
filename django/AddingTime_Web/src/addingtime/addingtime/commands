@@ -1,0 +1,2 @@
+python manage.py loaddata source
+python manage.py loaddata category
